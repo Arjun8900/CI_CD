@@ -8,6 +8,7 @@ public class BasicTest {
     @Test
     public void testAdd() {
         Assert.assertEquals(basic.add(1, 2), 3);
+
     }
 
 }
