@@ -31,7 +31,7 @@ jobs:
       run: mvn -T 1C -B package --file pom.xml
 
     - name: Copy Jar file
-      run: cp /target/*.jar /var/lib/docker/tmp/
+      run: sudo cp ./target/*.jar /var/lib/docker/tmp/
 #      run: mv build/libs/$(ls build/libs) app.jar
 
     - name: Build and Push Docker Image
